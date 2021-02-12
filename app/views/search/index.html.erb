@@ -1,0 +1,9 @@
+<% @people.each do |person| %>
+  <ul>
+    <li>name: <%= person[:name] %></li>
+    <li>allies: <%= person[:allies] %></li>
+    <li>enemies: <%= person[:enemies] %></li>
+    <li>afflication: <%= person[:affiliation] %></li>
+    <%= image_tag("#{person[:photoUrl]}") %><br/><br/>
+  </ul>
+<% end %>
